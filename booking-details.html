@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Your Room - Paradise Hotel</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <h1>Choose Your Stay</h1>
+  <p>Select your dates and pick the room category that suits you best.</p>
+
+  <form action="confirmation.html" method="POST" class="form">
+    
+
+    <fieldset>
+      <legend>Your Stay Details</legend>
+      <p>
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+      </p>
+      <p>
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+      </p>
+      <p>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="6" value="2" required>
+      </p>
+    </fieldset>
+
+    <br>
+
+    
+    <h2>Available Room Categories</h2>
+
+
+    <div class="standard">
+      <h3>Standard Room</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmtgKdAawwucELVDcBgIPxDwM6Pxcue0kXBHKh5UliC7WI4h2cdnz01w&s=10" alt="Standard Room Image Placeholder" width="400" height="250">
+      <p>A cozy, comfortable room equipped with a queen-sized bed, high-speed Wi-Fi, and a work desk. Perfect for solo travelers or couples.</p>
+      <p><strong>Price:</strong> $120 per night</p>
+      <p>
+        <input type="radio" id="room-standard" name="room_category" value="standard" required>
+        <label for="room-standard">Select Standard Room</label>
+      </p>
+    </div>
+
+    <hr>
+
+    
+    <div class="executive">
+      <h3>Executive Suite</h3>
+      <img src="https://www.europahotelbelfast.com/wp-content/uploads/2021/10/DSC_9965-Edit-1-1-1366x768-fp_mm-fpoff_0_0.jpg" alt="Executive Suite Image Placeholder" width="400" height="250">
+      <p>Spacious accommodation featuring a king-sized bed, a separate living area, a minibar, and a beautiful view of the city skyline.</p>
+      <p><strong>Price:</strong> $250 per night</p>
+      <p>
+        <input type="radio" id="room-executive" name="room_category" value="executive">
+        <label for="room-executive">Select Executive Suite</label>
+      </p>
+    </div>
+
+    <hr>
+
+
+    <div class="presidential">
+      <h3>Presidential Luxury Villa</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGLMXr1ZL3XDjSAdqOvYb4LG1xeKRx64iAABPAmeyEnjpK3fv31BB_5yk&s=10" alt="Presidential Villa Image Placeholder" width="400" height="250">
+      <p>Our premium experience. Includes a private terrace, ocean view, infinity plunge pool, 24/7 butler service, and a master lounge.</p>
+      <p><strong>Price:</strong> $600 per night</p>
+      <p>
+        <input type="radio" id="room-luxury" name="room_category" value="luxury">
+        <label for="room-luxury">Select Presidential Luxury Villa</label>
+      </p>
+    </div>
+
+    <br>
+
+    <div class="button">
+      <button type="submit">SAVE</button>
+      <a href="confirmation.html">Proceed to Final Confirmation</a>
+    </div>
+
+  </form>
+
+  <p>
+    <a href="Paradise.html">Cancel and go back to home page</a>
+  </p>
+
+</body>
+<script src="script.js"></script>
+</html>
